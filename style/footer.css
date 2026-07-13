@@ -1,0 +1,19 @@
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px; 
+    background-color: black;
+    color: dimgray;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px){
+
+    footer{
+        font-size: 12px;
+        padding: 10px;
+        letter-spacing: 1px;
+    }
+
+}

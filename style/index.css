@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+
+.logo{
+    width: 100px; 
+    height: auto;
+}
+
+.loja h3{
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    font-size: 35px;
+}
+
+/* imagem de centro */
+.pedidos{
+    padding-top: 20px;
+
+    width: 100%;
+    max-width: 1000px;
+
+    max-height: 60vh; /* 🔥 usa altura da tela */
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.slogan {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.slogan p {
+    font-size: 24px;
+    font-style: italic;
+    color: lightgray;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .loja h3{
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    .slogan p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .pedidos{
+        max-height: 40vh;
+    }
+
+}
