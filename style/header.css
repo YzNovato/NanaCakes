@@ -4,7 +4,7 @@ header{
     justify-content: center;
     gap: 20px;
     padding: 15px 8%;
-    border-bottom: 1px solid dimgray;
+    border-bottom: 1px solid rgb(150, 255, 255);
 }
 
 nav{

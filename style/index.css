@@ -20,11 +20,15 @@ body {
     width: 100px; 
     height: auto;
 }
+.principal_image{
+    width: 900px; 
+    height: auto;
+}
 
 .loja h3{
     text-align: center;
     padding: 30px 0px 30px 0px;
-    font-size: 35px;
+    font-size: 100px;
 }
 
 /* imagem de centro */

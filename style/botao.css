@@ -1,8 +1,8 @@
 .botao{
-    background-color: white;
+    background-color: rgb(150, 255, 255);
     padding: 20px 30px 20px 30px;
     border-radius: 40px;
-    border: 3px solid goldenrod;
+    border: 3px solid rgb(255, 145, 249);
     transition: 0.3s;
     text-decoration: none;
     color: black;
@@ -10,9 +10,9 @@
 }
 
 .botao:hover{
-    background-color: palegoldenrod;
+    background-color: rgb(255, 145, 249);
 }
 
 .botao.ativo{
-    background-color: goldenrod;
+    background-color: rgb(255, 145, 249);
 }
