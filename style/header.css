@@ -11,6 +11,14 @@ nav{
     display: flex;
     gap: 20px;
 }
+.logo {
+    height: 80px; /* ajuste aqui */
+    width: auto;
+}
+.logo {
+    height: 200px; 
+    width: auto;
+}
 
 @media (max-width: 768px){
 

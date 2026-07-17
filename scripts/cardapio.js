@@ -1,16 +1,12 @@
-function mostrar(cardapio, botaoClicado) {
-    // esconder cardápios
-    document.getElementById("ifood").style.display = "none";
-    document.getElementById("food99").style.display = "none";
-    document.getElementById("keeta").style.display = "none";
+function trocar(tipo) {
+    const branca = document.getElementById("massaBranca");
+    const chocolate = document.getElementById("massaChocolate");
 
-    // mostrar o escolhido
-    document.getElementById(cardapio).style.display = "grid";
-
-    // remover ativo de todos os botões
-    const botoes = document.querySelectorAll(".btn");
-    botoes.forEach(btn => btn.classList.remove("ativo"));
-
-    // adicionar ativo no clicado
-    botaoClicado.classList.add("ativo");
+    if (tipo === "branca") {
+        branca.style.display = "block";
+        chocolate.style.display = "none";
+    } else {
+        branca.style.display = "none";
+        chocolate.style.display = "block";
+    }
 }
