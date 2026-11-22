@@ -1,45 +1,43 @@
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 15px 8%;
     border-bottom: 1px solid rgb(150, 255, 255);
 }
 
-nav{
+.logo {
+    height: 120px;
+    width: auto;
+    display: block;
+}
+
+nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
-.logo {
-    height: 80px; /* ajuste aqui */
-    width: auto;
-}
-.logo {
-    height: 200px; 
-    width: auto;
-}
 
-@media (max-width: 768px){
+/* Responsividade */
+@media (max-width: 768px) {
 
-    header{
-        flex-direction: column; /* 🔥 quebra em coluna */
+    header {
+        flex-direction: column;
         gap: 15px;
+        padding: 15px 20px;
         text-align: center;
     }
 
-    nav{
-        flex-wrap: wrap; /* 🔥 permite quebrar linha */
+    .logo {
+        height: 80px;
+    }
+
+    nav {
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
 
-    .botao{
-        padding: 12px 18px; /* 🔥 menor no mobile */
-        font-size: 14px;
-    }
-
-    .logo{
-        width: 80px; /* 🔥 logo menor */
-    }
 }

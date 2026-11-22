@@ -13,57 +13,55 @@ body {
     flex-direction: column;
 }
 
-
-.logo{
-    width: 100px; 
-    height: auto;
-}
-
-
+/* Conteúdo principal */
 .conteudo {
-    max-width: 800px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px 8%; 
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    flex: 1; 
-    gap: 25px;
+    justify-content: center;
+    flex: 1;
 }
 
-
+/* História */
 .historia {
     text-align: center;
 }
 
-.historia h3 {
-    font-size: 28px;
-    color: goldenrod; 
-    margin-bottom: 15px;
+.historia h1 {
+    font-size: 36px;
+    color: goldenrod;
+    margin-bottom: 25px;
     font-weight: normal;
+    letter-spacing: 2px;
 }
 
 .historia p {
     margin-bottom: 12px;
-    line-height: 1.6;
+    line-height: 1.7;
     color: silver;
     font-size: 20px;
     text-align: justify;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
 
-    .conteudo{
-        padding: 20px 20px;
+    .conteudo {
+        padding: 30px 20px;
     }
 
-    .historia h3{
-        font-size: 22px;
+    .historia h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
     }
 
-    .historia p{
+    .historia p {
         font-size: 16px;
-        text-align: left; 
+        text-align: left;
+        line-height: 1.6;
     }
 
 }

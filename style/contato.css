@@ -13,46 +13,33 @@ body {
     flex-direction: column;
 }
 
-.logo{
-    width: 100px; 
-    height: auto;
+/* Conteúdo principal */
+.contato-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 40px 20px;
 }
 
-/* botoes */
-.botoes-contato{
+/* Área do pedido */
+.pedido h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Botões de contato */
+.botoes-contato {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    gap: 15px; 
+    gap: 15px;
 }
 
-.contato-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* centraliza vertical */
-    align-items: center;     /* centraliza horizontal */
-    text-align: center;
-    flex: 1; /* ocupa o espaço disponível */
-    gap: 30px;
-}
-
-/* endereço */
-.endereco{
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    text-align: left;
-    color: lightgray;
-    line-height: 1.6;
-}
-
-.endereco h3{
-    color: goldenrod;
-    margin-bottom: 10px;
-}
-
-.btn{
+.btn {
     padding: 18px 50px;
     border: none;
     border-radius: 100px;
@@ -62,60 +49,68 @@ body {
     transition: 0.2s;
     display: inline-block;
     text-align: center;
-    text-decoration: none; /* tira o sublinhado do link */
+    text-decoration: none;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.8;
 }
 
-.btn.ativo{
+.btn.ativo {
     outline: 2px solid white;
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.ifood{
-    background-color: #ea1d2c;
-}
-
-.food99{
-    background-color: #ffcc00;
-    color: black;
-}
-
-.keeta{
-    background-color: #7ed957;
-    color: black;
-}
-
-
-.whatsapp{
+/* Cores */
+.whatsapp {
     background-color: #25D366;
-    color: white; 
+    color: white;
 }
 
-@media (max-width: 768px){
-    .botoes-contato{
+.instagram {
+    background-color: #E1306C;
+    color: white;
+}
+
+/* Endereço */
+.endereco {
+    text-align: center;
+    color: lightgray;
+    line-height: 1.6;
+}
+
+.endereco h2 {
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .contato-container {
+        gap: 35px;
+        padding: 30px 20px;
+    }
+
+    .pedido h1 {
+        font-size: 22px;
+    }
+
+    .botoes-contato {
         flex-direction: column;
         gap: 15px;
     }
 
-    .btn{
+    .btn {
         width: 100%;
         max-width: 350px;
         padding: 14px;
         font-size: 15px;
     }
 
-    .endereco{
-        position: static; /* 🔥 remove o fixed */
+    .endereco {
         text-align: center;
-        margin-top: 20px;
     }
 
-
-    h2{
-        font-size: 22px;
-    }
 }

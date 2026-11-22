@@ -1,18 +1,29 @@
-.botao{
+.botao {
     background-color: rgb(150, 255, 255);
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
     border-radius: 40px;
     border: 3px solid rgb(255, 145, 249);
     transition: 0.3s;
     text-decoration: none;
     color: black;
     cursor: pointer;
+    display: inline-block;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: rgb(255, 145, 249);
 }
 
-.botao.ativo{
+.botao.ativo {
     background-color: rgb(255, 145, 249);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .botao {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
 }

@@ -11,45 +11,42 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
-    overflow: hidden;
 }
 
-
-.logo{
-    width: 100px; 
-    height: auto;
-}
-.principal_image{
-    width: 900px; 
-    height: auto;
-}
-
-.loja h3{
-    text-align: center;
-    padding: 30px 0px 30px 0px;
-    font-size: 100px;
+/* Conteúdo principal da Home */
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 25px;
 }
 
-/* imagem de centro */
-.pedidos{
-    padding-top: 20px;
-
+/* Imagem principal */
+.principal_image {
     width: 100%;
-    max-width: 1000px;
-
-    max-height: 60vh; /* 🔥 usa altura da tela */
+    max-width: 900px;
     height: auto;
-
     display: block;
-    margin: 0 auto;
     border-radius: 10px;
 }
 
-.slogan {
+/* Nome da loja */
+.apresentacao {
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    border-bottom: 1px solid #333;
+}
+
+.apresentacao h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+/* Slogan */
+.slogan {
+    padding: 10px 20px;
 }
 
 .slogan p {
@@ -59,22 +56,21 @@ body {
     line-height: 1.5;
 }
 
-
-
+/* Responsividade */
 @media (max-width: 768px) {
 
-    .loja h3{
-        font-size: 24px;
-        padding: 20px 0;
+    .home {
+        padding: 25px 15px;
+        gap: 15px;
     }
 
-    .slogan p{
+    .apresentacao h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .slogan p {
         font-size: 16px;
-        padding: 0 10px;
-    }
-
-    .pedidos{
-        max-height: 40vh;
     }
 
 }

@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../style/cardapio.css">
-    <link rel="stylesheet" href="../style/footer.css">
-    <link rel="stylesheet" href="../style/botao.css">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/botao.css">
+    <link rel="stylesheet" href="../style/footer.css">
 
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-    
+
     <title>Cardápio</title>
 </head>
 
 <body>
 
-<header>
-    <img class="logo" src="../images/logo.png" alt="Logo Nana Cakes">
+    <header>
+        <img class="logo" src="../images/logo.png" alt="Logo Nana Cakes">
 
-    <nav>
-        <a href="../index.html" class="botao">Home</a>
-        <a href="sobre_nos.html" class="botao">Sobre Nós</a>
-        <a href="cardapio.html" class="botao ativo">Cardápio</a>
-        <a href="contato.html" class="botao">Contato</a>
-    </nav>
-</header>
+        <nav>
+            <a href="../index.html" class="botao">Home</a>
+            <a href="sobre_nos.html" class="botao">Sobre Nós</a>
+            <a href="cardapio.html" class="botao ativo">Cardápio</a>
+            <a href="contato.html" class="botao">Contato</a>
+        </nav>
+    </header>
 
-<div class="botoes-cardapio">
-    <div class="grupo-botoes">
-        <button onclick="trocar('branca')">Massa Branca</button>
-        <button onclick="trocar('chocolate')">Massa Chocolate</button>
-    </div>
+    <main class="cardapio-container">
 
-    <a href="../pages/contato.html" class="btn pedir">Peça agora</a>
-</div>
+        <h1 class="titulo">Cardápio</h1>
 
-<section class="cardapio-container">
+        <a href="../pages/contato.html" class="btn pedir">
+            Peça agora
+        </a>
 
+        <section class="recheios">
 
+            <h2 class="subtitulo">Recheios</h2>
 
-    <h2 class="subtitulo">Recheios</h2>
+            <div class="cardapio-grid">
 
-    <div class="cardapio-grid">
+                <div class="cardapio-box">
 
-        <div id="massaBranca">
-            <h3>Massa Branca</h3>
-            <ul>
-                <li>Beijinho</li>
-                <li>Leite Ninho</li>
-                <li>Creme com Abacaxi</li>
-                <li>Doce de Leite com Nozes</li>
-                <li>Doce de Leite com Ameixa</li>
-                <li>Doce de Leite com Coco</li>
-                <li>Churros</li>
-            </ul>
-            <p class="preco">R$60,00 Kg</p>
-        </div>
+                    <h3>Massa Branca</h3>
 
-        <div id="massaChocolate" style="display: none;">
-            <h3>Massa Chocolate</h3>
-            <ul>
-                <li>Brigadeiro</li>
-                <li>Mousse Alpino</li>
-                <li>Flocado</li>
-                <li>Prestígio</li>
-                <li>Creme de Avelã</li>
-                <li>Chandelle</li>
-            </ul>
-            <p class="preco">R$65,00 Kg</p>
-        </div>
+                    <ul>
+                        <li>Beijinho</li>
+                        <li>Leite Ninho</li>
+                        <li>Creme com Abacaxi</li>
+                        <li>Doce de Leite com Nozes</li>
+                        <li>Doce de Leite com Ameixa</li>
+                        <li>Doce de Leite com Coco</li>
+                        <li>Churros</li>
+                    </ul>
 
-    </div>
+                    <p class="preco">R$60,00 Kg</p>
 
-    <p class="rodape-info">Encomendas a partir de 1,5Kg</p>
+                </div>
 
-</section>
+                <div class="cardapio-box">
 
-<footer> &copy; Nana Cakes</footer>
+                    <h3>Massa Chocolate</h3>
 
-<script src="../js/cardapio.js"></script>
+                    <ul>
+                        <li>Brigadeiro</li>
+                        <li>Mousse Alpino</li>
+                        <li>Flocado</li>
+                        <li>Prestígio</li>
+                        <li>Creme de Avelã</li>
+                        <li>Chandelle</li>
+                    </ul>
+
+                    <p class="preco">R$65,00 Kg</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="rodape-info">
+            Encomendas a partir de 1,5Kg
+        </p>
+
+    </main>
+
+    <footer>
+        &copy; Nana Cakes
+    </footer>
 
 </body>
+
 </html>

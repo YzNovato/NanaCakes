@@ -13,50 +13,112 @@ body {
     flex-direction: column;
 }
 
-
 .cardapio-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
-    padding: 30px;
+    flex: 1;
 }
 
 .titulo {
     font-size: 48px;
-    color: #d81b60;
+    margin-bottom: 25px;
 }
 
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pedir {
+    background-color: rgb(255, 145, 249);
+    color: black;
+}
+
+.pedir:hover {
+    opacity: 0.8;
+}
+
+.recheios {
+    width: 100%;
+    margin-top: 40px;
+}
 
 .subtitulo {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .cardapio-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .cardapio-box {
-    text-align: left;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid rgb(150, 255, 255);
+    border-radius: 15px;
 }
 
 .cardapio-box h3 {
-    color: #d81b60;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: rgb(255, 145, 249);
 }
 
 .cardapio-box ul {
     list-style: none;
+    line-height: 2;
+    color: lightgray;
 }
 
 .preco {
     font-weight: bold;
-    color: #d81b60;
-    margin-top: 10px;
+    color: rgb(150, 255, 255);
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 .rodape-info {
     margin-top: 30px;
     font-weight: bold;
+    color: lightgray;
+}
+
+@media (max-width: 768px) {
+
+    .cardapio-container {
+        padding: 30px 15px;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .cardapio-box {
+        padding: 20px 15px;
+    }
+
+    .cardapio-box h3 {
+        font-size: 22px;
+    }
+
+    .btn {
+        padding: 14px 30px;
+    }
 }
